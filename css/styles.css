@@ -1,0 +1,199 @@
+body {
+    user-select: none;
+    background-color: rgb(252, 252, 187);
+}
+
+.titolo {
+    text-align: center;
+    background-color: rgb(187, 187, 187);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    width: 25%;
+    height: 70px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 50px;
+    padding: auto;
+    font-weight: bold;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.element {
+    width: 45%;
+    height: 250px;
+    border: 3px solid rgb(185, 184, 184);
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 50px;
+    background-color: white;
+}
+
+.element:active {
+    scale: 90%;
+    transition: 0.1s;
+}
+
+.container {
+    width: 50%;
+    border: 3px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    background-color: rgb(43, 43, 43);
+    border-radius: 10px;
+}
+
+.buyableItem {
+    background-color: green;
+    height: 50px;
+    margin-top:  10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center; 
+}
+
+.buyableItem:active {
+    scale: 90%;
+    transition: 0.1s;
+}
+
+.bItems {
+    width: 85%;
+    height: 100%;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: bolder;
+    border: 0px solid black;
+    background-color: rgb(250, 250, 232);
+}
+
+.contatori {
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    padding: auto;
+    font-weight: bold;
+}
+
+#clickme {
+    font-size: 55px;
+    text-align: center;
+    padding: auto;
+}
+
+.switch {
+    --false: #E81B1B;
+    --true: #009068;
+   }
+   
+   input[type=checkbox] {
+    appearance: none;
+    height: 2rem;
+    width: 3.5rem;
+    background-color: gray;
+    position: relative;
+    border-radius: .2em;
+    cursor: pointer;
+   }
+   
+   input[type=checkbox]::before {
+    content: '';
+    display: block;
+    height: 1.9em;
+    width: 1.9em;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: calc(1.9em/2 + .3em);
+    background-color: var(--false);
+    border-radius: .2em;
+    transition: .3s ease;
+   }
+   
+   input[type=checkbox]:checked::before {
+    background-color: var(--true);
+    left: calc(100% - (1.9em/2 + .3em));
+   }
+
+.description {
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#pForBuy {
+    color: rgb(12, 167, 12);
+}
+
+#pForSell {
+    color: red;
+}
+
+.sellableItem {
+    background-color: red;
+    height: 50px;
+    margin-top:  10px;
+    margin-bottom: 10px;
+    width: 100%;
+    text-align: center; 
+    color: red;
+}
+
+.m{
+    padding: auto;
+    width: 10%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sp{
+    width: 1000px;
+    margin-left: auto;
+}
+
+.radio-inputs {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    border-radius: 0.5rem;
+    background-color: #EEE;
+    box-sizing: border-box;
+    box-shadow: 0 0 0px 1px rgba(0, 0, 0, 0.06);
+    padding: 0.25rem;
+    width: 300px;
+    font-size: 14px;
+}
+  
+.radio-inputs .radio {
+    flex: 1 1 auto;
+    text-align: center;
+}
+  
+.radio-inputs .radio input {
+    display: none;
+}
+  
+.radio-inputs .radio .name {
+    display: flex;
+    cursor: pointer;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border: none;
+    padding: .5rem 0;
+    color: rgba(51, 65, 85, 1);
+    transition: all .15s ease-in-out;
+}
+  
+.radio-inputs .radio input:checked + .name {
+    background-color: #fff;
+    font-weight: 600;
+}
+
+.text-red {
+    color: red;
+}
+
+.achievements {
+    background-color: white;
+}
